@@ -2,7 +2,12 @@
 
 require __DIR__ . "/../vendor/autoload.php";
 
-$config = json5_decode(file_get_contents("./../config.json5"));
+$config = apc_fetch("config");
+if (!$config)
+{
+    $config = json5_decode(file_get_contents("./../config.json5"));
+    apc_store("config", $config);
+}
 
 $icon_url = $config->icon_url;
 $apps = $config->apps;

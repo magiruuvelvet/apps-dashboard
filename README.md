@@ -3,14 +3,12 @@
 The simplest application dashboard ever.
 Perfect for new tab pages in all your browsers.
 
-Works best for private internal networks. Not recommended
-for public dashboards, because the config file is
-loaded and parsed with every request. There is no caching
-at all.
+Works best for private internal networks.
 
 ## Requirements
 
  - PHP
+ - APC (Alternative PHP Cache)
  - PHP Composer
  - any PHP compatible web server
 
@@ -51,9 +49,3 @@ file, thanks to JSON5 instead of regular JSON.
 
 Create a `public/user-style.css` file and put all your
 CSS overwrites there.
-
-## TODO
-
-Add memory caching and don't parse the config file with
-every request. Should heavily improve the performance
-when opening a new tab in the browser.
