@@ -1,0 +1,5 @@
+/vendor
+/error.log
+/public/icons
+/public/user-style.css
+/config.json5

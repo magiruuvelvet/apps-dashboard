@@ -1,0 +1,48 @@
+{
+    // the title of the page
+    "title": "My Dashboard",
+
+    // the background color of the page
+    "background_color": "#f5f5f5",
+
+    // url where icons are accessible
+    "icon_url": "http://dashboard.local/icons",
+
+    // should applications be opened in a new tab
+    "open_in_new_tab": false,
+
+    // search bar visibility
+    "search": true,
+
+    // search url where the query is sent to
+    // works best with Searx
+    "search_url": "http://search.local",
+
+    // placeholder text for the search bar input
+    "search_placeholder": "Search",
+
+    // language of the search results (mostly Searx only)
+    "search_locale": "en",
+
+    // a list of all your apps
+    "apps": [
+        {
+            "name": "App 1",              // application display name
+            "icon": "icon1.png",          // icon to display
+            "url": "http://app1.local",   // target url
+            "class": "app1",              // additional css class for customizations
+        },
+
+        // this entry starts a new row
+        {
+            "break": true,
+        },
+
+        {
+            "name": "App 2",
+            "icon": "icon2.png",
+            "url": "http://app2.local",
+            "class": "app2",
+        },
+    ],
+}
