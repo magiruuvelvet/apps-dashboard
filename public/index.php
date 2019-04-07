@@ -16,6 +16,7 @@ $apps = $config->apps;
 
 <!DOCTYPE html>
 <html>
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title><?php echo $config->title; ?></title>
@@ -26,13 +27,12 @@ $apps = $config->apps;
             background-color: <?php echo $config->background_color; ?>;
         }
     </style>
-<head>
 </head>
 <body>
 
 <div id="background"></div>
 
-<!-- BEGIN HEADER -->
+<!-- BEGIN HEADER (unused) -->
 <header>
 </header>
 
