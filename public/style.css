@@ -136,6 +136,7 @@ header {
     page-break-before: always;
     break-after: always;
     position: relative;
+    flex-basis: 100%;
 }
 
 a, a:hover, a:visited {
